@@ -434,8 +434,9 @@ export default function AdminBookingsPage() {
               </p>
             </div>
           ) : (
-            <div className="overflow-x-auto rounded-brand border border-white/10">
-              <table className="w-full text-sm">
+            <div className="rounded-brand border border-white/10 overflow-hidden">
+              <div className="overflow-x-auto -mx-4 px-4 lg:mx-0 lg:px-0">
+              <table className="w-full min-w-[600px] text-sm">
                 <thead>
                   <tr className="border-b border-white/10 bg-white/5">
                     <th className="px-4 py-3 text-left font-medium text-white/70">
@@ -503,6 +504,7 @@ export default function AdminBookingsPage() {
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           )}
 

@@ -115,7 +115,7 @@ export default function AdminServicesPage() {
   return (
     <div>
       {/* Header */}
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-8">
         <h1 className="font-serif text-2xl text-transcend-gold">Services</h1>
         <Link
           href="/admin/services/new"
@@ -207,7 +207,8 @@ export default function AdminServicesPage() {
                 {category}
               </h2>
               <div className="rounded-brand border border-white/10 overflow-hidden">
-                <table className="w-full">
+                <div className="overflow-x-auto -mx-4 px-4 lg:mx-0 lg:px-0">
+                <table className="w-full min-w-[600px]">
                   <thead>
                     <tr className="border-b border-white/10 bg-white/5">
                       <th className="text-left px-4 py-3 text-xs font-medium text-white/60 uppercase tracking-wider">
@@ -265,6 +266,7 @@ export default function AdminServicesPage() {
                     ))}
                   </tbody>
                 </table>
+                </div>
               </div>
             </div>
           ))}

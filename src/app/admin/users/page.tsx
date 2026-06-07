@@ -336,8 +336,8 @@ export default function AdminUsersPage() {
         {!listLoading && !listError && users && (
           <>
             {/* Table */}
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
+            <div className="overflow-x-auto -mx-4 px-4 lg:mx-0 lg:px-0">
+              <table className="w-full min-w-[600px] text-sm">
                 <thead>
                   <tr className="border-b border-white/10 text-left">
                     <th className="px-6 py-3 text-white/60 font-medium">Email</th>
