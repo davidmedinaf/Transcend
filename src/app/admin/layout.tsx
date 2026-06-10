@@ -29,9 +29,9 @@ export default function AdminLayout({
   }
 
   return (
-    <div className="flex min-h-screen bg-[#1a1a1a] text-white">
+    <div className="flex min-h-screen bg-[#1a1a1a] text-white overflow-x-hidden">
       {/* Mobile header */}
-      <header className="fixed top-0 left-0 right-0 z-40 flex h-14 items-center justify-between border-b border-white/10 bg-transcend-black px-4 lg:hidden">
+      <header className="fixed top-0 left-0 right-0 z-50 flex h-14 items-center justify-between border-b border-white/10 bg-transcend-black px-4 lg:hidden">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="text-white/70 hover:text-white p-2"
@@ -113,7 +113,7 @@ export default function AdminLayout({
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 min-h-screen pt-14 px-4 pb-6 lg:pt-0 lg:ml-[220px] lg:p-8 overflow-x-hidden">
+      <main className="flex-1 min-h-screen pt-14 px-4 pb-6 lg:pt-0 lg:ml-[220px] lg:p-8 bg-[#1a1a1a] min-w-0 overflow-x-hidden">
         {children}
       </main>
     </div>
